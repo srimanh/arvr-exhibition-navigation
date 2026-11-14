@@ -38,8 +38,9 @@ function visit(key) {
 const viewport = document.querySelector('#viewport');
 const visitorCamera = document.querySelector('#visitor-camera');
 viewport.addEventListener('pointerdown', () => viewport.focus());
-viewport.addEventListener('focus', () => visitorCamera.setAttribute('wasd-controls', 'enabled', true));
-viewport.addEventListener('blur', () => {
+viewport.addEventListener('focusin', () => visitorCamera.setAttribute('wasd-controls', 'enabled', true));
+viewport.addEventListener('focusout', event => {
+  if (viewport.contains(event.relatedTarget)) return;
   visitorCamera.setAttribute('wasd-controls', 'enabled', false);
   const movement = visitorCamera.components['wasd-controls'];
   if (movement && movement.velocity) movement.velocity.set(0, 0, 0);
@@ -59,6 +60,7 @@ const movementKeys = ['KeyW','KeyA','KeyS','KeyD','ArrowUp','ArrowDown','ArrowLe
 viewport.addEventListener('keydown', event => {
   if (!movementKeys.includes(event.code)) return;
   event.preventDefault();
+  visitorCamera.setAttribute('wasd-controls', 'enabled', true);
   visitorCamera.components['wasd-controls'].keys[event.code] = true;
 });
 viewport.addEventListener('keyup', event => {

@@ -16,7 +16,7 @@ Browser: automated Chromium / HeadlessChrome 157.0.0.0 on macOS (browser reports
 | Keyboard and focus | Pass | Tab from Mechanisms focused Back to Entrance; Enter restored entrance. |
 | Reload | Pass | Live page reloaded and scene renderer resumed. |
 
-Known limitations: instant viewpoint changes; no walking or collision system. Internet required for initial website access. Public GitHub Pages hosting; no private user data collected by the application.
+Known limitations: destination buttons change viewpoints instantly; optional desktop movement has no collision boundaries. Internet required for initial website access. Public GitHub Pages hosting; no private user data collected by the application.
 
 Not tested: Safari, Firefox, mobile devices, headset input, physical tracking, immersive comfort, high-cohort performance or a timed unaided student attempt.
 
