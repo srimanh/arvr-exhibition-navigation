@@ -49,3 +49,7 @@ A-Frame **1.7.0** is bundled from https://aframe.io/releases/1.7.0/aframe.min.js
 ## Access and limitations
 
 No camera, microphone, phone or headset is required. This is a desktop virtual exhibition, not validated immersive VR or physical AR. GitHub Pages serves the public files; do not commit personal data or secrets. Initial website access needs internet. Browser coverage and actual verification results are recorded in `TEST-RECORD.md`.
+
+## Looking and moving in 3D
+
+Click or Tab into the scene to focus it. Drag with the mouse to look around. Hold W/A/S/D or arrow keys to move. Tab leaves the scene; movement is disabled when it loses focus. Destination buttons reset both camera position and viewing direction, so Back to Entrance recovers from wandering. Live readout follows the camera. No collision boundaries are implemented: you can pass through displays or leave the exhibition area. Named viewpoints remain the required student task; exploration controls are supplied.
