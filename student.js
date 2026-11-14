@@ -4,15 +4,15 @@
 // Use the destination table in README.md. Keep keys unchanged.
 const destinations = {
   energy: {
-    position: null, // Task 1
-    target: null
+    position: [-3, 2, 2], // Task 1
+    target: [-3, 1.3, -2]
   },
   mechanisms: {
-    position: null, // Task 2
-    target: null
+    position: [3, 2, 2], // Task 2
+    target: [3, 1.1, -2]
   },
   entrance: {
-    position: null, // Task 3
-    target: null
+    position: [0, 3, 8], // Task 3
+    target: [0, 1.3, -2]
   }
 };
