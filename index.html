@@ -28,4 +28,5 @@ body{margin:0;background:#eef2f5;color:#1c2f40;font:16px Arial,sans-serif}main{m
 </a-scene></div>
 <p id="description">Entrance: energy exhibit on the left; door mechanism on the right.</p><p id="camera-readout">Camera position: 0, 3, 8 · Looking towards: 0, 1.3, -2</p>
 <h2>Visitor route</h2><ol id="history"><li>Entrance — initial overview</li></ol>
-</main><script src="student.js"></script><script src="harness.js"></script></body></html>
+<p>Page address: <a id="page-address"></a></p>
+</main><script>const address = document.querySelector('#page-address'); address.textContent = location.href; address.href = location.href;</script><script src="student.js"></script><script src="harness.js"></script></body></html>
