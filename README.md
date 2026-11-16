@@ -1,5 +1,11 @@
 # Interactive Exhibition
 
+## Live demo
+
+[Open the working assignment](https://srimanh.github.io/arvr-exhibition-navigation/)
+
+Runs in a desktop browser. No cloning or local server required.
+
 A desktop 3D exhibition with two supplied displays: a solar panel and a door mechanism. Visitors can inspect each display and return to the entrance.
 
 Live site: https://srimanh.github.io/arvr-exhibition-navigation/
